@@ -1,0 +1,4 @@
+Flask
+flask-socketio
+eventlet      # Essential for high-performance WebSockets
+gunicorn      # The production server needed to run the app
