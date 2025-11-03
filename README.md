@@ -5,7 +5,7 @@
 </pre>
 ### Where secrets stay secret🤫
 
-[Try it live](https://walle-hmj0.onrender.com/)  
+[Try it live](https://no1knows.onrender.com)  
 
 "no1 knows" is a zero-knowledge messaging platform that ensures your conversations remain exactly that - known to no one but the intended recipients. Built on robust end-to-end encryption (E2EE), it demonstrates how modern web applications can provide absolute privacy through client-side cryptography and zero-trust server architecture.
 
@@ -48,7 +48,7 @@ Goals:
 
 ## Live trial
 
-Try the live demo: https://walle-hmj0.onrender.com/
+Try the live demo: https://no1knows.onrender.com
 
 Note: the demo is meant for evaluation and learning only. Do not use it for real secrets without reviewing and adapting the security model to your needs.
 
@@ -163,7 +163,7 @@ When opening pull requests, include a short security rationale for any crypto-re
 
 ## Deployment
 
-The live trial is hosted at: https://walle-hmj0.onrender.com/
+The live trial is hosted at: https://no1knows.onrender.com
 
 For production: deploy the server behind HTTPS with secure headers (HSTS, CSP) and monitor server logs for unusual activity. Keep the server code minimal — the crypto responsibilities remain client-side.
 
