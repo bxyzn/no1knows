@@ -6,7 +6,7 @@
     <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
     <script src="{{ url_for('static', filename='cryptoUtils.js') }}"></script>
     <script src="{{ url_for('static', filename='main.js') }}"></script>
-    <title>✖‿✖</title>
+    <title>no1knows</title>
     <style>
         * {
             margin: 0;
@@ -21,7 +21,7 @@
 
         body {
             background: #000;
-            color: #fff;
+            color: #e6d0ff;
             line-height: 1.6;
             max-width: 600px;
             margin: 0 auto;
@@ -35,8 +35,8 @@
             font-family: monospace, 'Courier New', ui-monospace, Menlo, Consolas;
             white-space: pre;
             overflow-x: auto;
-            color: #fff;
-            text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+            color: #d8b4fe;
+            text-shadow: 0 0 5px #d8b4fe, 0 0 10px #c084fc;
             font-size: 10px;
             line-height: 1;
             text-align: center;
@@ -50,7 +50,7 @@
             font-weight: 400;
             text-align: center;
             margin-bottom: 30px;
-            color: #666;
+            color: #a78bfa;
         }
 
         #messages {
@@ -63,8 +63,8 @@
 
         #messages li {
             padding: 12px 0;
-            border-bottom: 1px solid #1a1a1a;
-            color: #e0e0e0;
+            border-bottom: 1px solid #3f3b52;
+            color: #e6d0ff;
             font-size: 0.95rem;
         }
 
@@ -86,26 +86,26 @@
         #m {
             flex-grow: 1;
             padding: 14px 16px;
-            border: 1px solid #333;
+            border: 1px solid #5a4c7a;
             border-radius: 8px;
             font-size: 0.95rem;
             outline: none;
-            background: #111;
-            color: #fff;
+            background: #1a1625;
+            color: #e6d0ff;
             transition: all 0.2s ease;
         }
 
         #m:focus {
-            border-color: #555;
-            background: #1a1a1a;
+            border-color: #8b5cf6;
+            background: #2a2438;
         }
 
         #m::placeholder {
-            color: #666;
+            color: #7e6fa3;
         }
 
         button {
-            background: #fff;
+            background: #c084fc;
             border: none;
             cursor: pointer;
             color: #000;
@@ -118,7 +118,7 @@
         }
 
         button:hover {
-            background: #f0f0f0;
+            background: #d8b4fe;
             transform: translateY(-1px);
         }
 
@@ -131,7 +131,7 @@
         }
 
         #messages::-webkit-scrollbar-thumb {
-            background: #333;
+            background: #5a4c7a;
             border-radius: 2px;
         }
 
@@ -163,19 +163,19 @@
 </head>
 <body>
     <div id="loading" aria-hidden="false">
-        <div style="display:flex;align-items:center;gap:12px;color:#fff;font-size:0.95rem">
-            <div class="loader" aria-hidden="true" style="width:20px;height:20px;border:3px solid #111;border-top-color:#fff;border-radius:50%;animation:spin 1s linear infinite"></div>
+        <div style="display:flex;align-items:center;gap:12px;color:#d8b4fe;font-size:0.95rem">
+            <div class="loader" aria-hidden="true" style="width:20px;height:20px;border:3px solid #1a1625;border-top-color:#d8b4fe;border-radius:50%;animation:spin 1s linear infinite"></div>
             <div>Loading messages…</div>
         </div>
     </div>
 
     <pre class="ascii">
-  __         .__   __   ________                   _____                                       
-_╱  │______  │  │ │  │ _╲_____  ╲  _____   ____   ╱  _  ╲   ____ ___.__.__  _  _______  ___.__.
-╲   __╲__  ╲ │  │ │  │╱ ╱╱  ____╱ ╱     ╲_╱ __ ╲ ╱  ╱_╲  ╲ ╱    <   │  │╲ ╲╱ ╲╱ ╱╲__  ╲<   │  │
- │  │  ╱ __ ╲│  │_│    <╱       ╲│  Y Y  ╲  ___╱╱    │    ╲   │  ╲___  │ ╲     ╱  ╱ __ ╲╲___  │
- │__│ (____  ╱____╱__│_ ╲_______ ╲__│_│  ╱╲___  >____│__  ╱___│  ╱ ____│  ╲╱╲_╱  (____  ╱ ____│
-           ╲╱          ╲╱       ╲╱     ╲╱     ╲╱        ╲╱     ╲╱╲╱                   ╲╱╲╱     
+              ____ __                               
+  ____   ____╱_   │  │ __ ____   ______  _  ________
+ ╱    ╲ ╱  _ ╲│   │  │╱ ╱╱    ╲ ╱  _ ╲ ╲╱ ╲╱ ╱  ___╱
+│   │  (  <_> )   │    <│   │  (  <_> )     ╱╲___ ╲ 
+│___│  ╱╲____╱│___│__│_ ╲___│  ╱╲____╱ ╲╱╲_╱╱____  >
+     ╲╱                ╲╱    ╲╱                  ╲╱
     </pre>
 
     <h2 id="username">user_0000</h2>
